@@ -1,0 +1,7 @@
+create table member3 (
+id varchar(100) not null,
+pwd varchar(100) not null,
+nick_name varchar(100) not null,
+reg_at datetime default current_timestamp,
+lasg_login datetime not null,
+primary key(id));

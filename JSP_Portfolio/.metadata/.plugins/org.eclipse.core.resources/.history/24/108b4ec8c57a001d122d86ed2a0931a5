@@ -1,0 +1,7 @@
+@charset "UTF-8";
+section{
+	min-height: 250px;
+}
+.turnup{
+	height: 430px;
+}

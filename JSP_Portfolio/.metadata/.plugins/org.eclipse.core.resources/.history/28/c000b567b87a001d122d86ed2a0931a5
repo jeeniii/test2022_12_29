@@ -1,0 +1,13 @@
+@charset "UTF-8";
+form{
+	width: 500px;
+	padding: 0px;
+}
+section{
+	margin: 0 auto;
+}
+.j_put{
+	display: inline-flex;
+	width: 100%;
+	padding: 10px 20px;
+}

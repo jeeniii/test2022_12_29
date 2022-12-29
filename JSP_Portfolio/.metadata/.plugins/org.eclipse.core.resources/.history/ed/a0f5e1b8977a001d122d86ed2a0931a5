@@ -1,0 +1,57 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="/resources/css/register.css" type="text/css">
+</head>
+<body>
+<div class="main_container">
+<h1>게시판 등록하기</h1>
+<div class="main_container2">
+	<form action="/brd/insert" method="post" enctype="multipart/form-data">
+		<div class="sub">
+			<div class="sub2">
+				<div class="input1">
+					<span class="sp">
+						제목:
+					</span>
+						<input type="text" name="title" id="textbox1"> <br>
+				</div>
+			</div>
+			<div class="sub2">
+				<div class="input2">
+					<span class="sp">
+						작성자: 
+					</span>
+						<input type="text" name="writer" value="${ses.nick_name }" id="textbox2" readonly="readonly"> <br>
+				</div>
+			</div>
+			<div class="sub2">
+				<div class="input3">
+					<span class="sp">
+						내용: 
+					</span>
+						<textarea rows="30" cols="30" name="content"></textarea> <br>
+				</div>
+			</div>
+			<div class="sub2">
+				<div class="input4">
+					<span class="sp">
+						이미지:
+					</span>
+						<input type="file" id="file" name="image_file" accept="image/png, image/jpg, img/jpeg, image/gif"> <br>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<button type="submit">게시판 등록</button>
+		</div>
+	</form>
+</div>
+<a href="/" id="hanlabtn"><img src="/resources/한라봉.png" id="hanlabong"></a>
+</div>
+</body>
+</html>

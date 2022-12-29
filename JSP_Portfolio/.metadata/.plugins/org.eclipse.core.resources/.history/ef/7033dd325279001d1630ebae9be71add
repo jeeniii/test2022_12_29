@@ -1,0 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Modify Page</h1>
+Id: <input type="text" name="id" readonly="readonly"> <br>
+Password: <input type="text" name="pwd"> <br>
+Nick_Name: <input type="text" name="nick_name"> <br>
+PhoneNumber: <input type="text" name="phone" oninput="hypenTel(this)" maxlength="13"> <br>
+</body>
+</html>

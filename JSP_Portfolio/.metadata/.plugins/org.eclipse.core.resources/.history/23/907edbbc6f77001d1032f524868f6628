@@ -1,0 +1,22 @@
+package domain;
+
+public class MemberVO {
+	/*create table member3 (
+	id varchar(100) not null,
+	pwd varchar(100) not null,
+	nick_name varchar(100) not null,
+	reg_at datetime default current_timestamp,
+	last_login datetime not null,
+	primary key(id));*/
+	private String id;
+	private String pwd;
+	private String nick_name;
+	private String reg_at;
+	private String last_login;
+	
+	//login(id,pwd)
+	
+	//join,modify(id,pwd,nick_name)
+	
+	//list(all)
+}

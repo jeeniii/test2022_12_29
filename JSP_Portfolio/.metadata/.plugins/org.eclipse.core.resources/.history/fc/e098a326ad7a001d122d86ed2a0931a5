@@ -1,0 +1,54 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+	width:100%;
+	height:100%;
+	background-image: url("/resources/제주 바다.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.topic{
+	text-align: center;
+}
+.realHeader{
+}
+.headbar{
+	float: right;
+	padding: 0px 30px;
+	height: 60px;
+}
+.headbar>ul{
+    list-style-type: none;
+}
+.headbar>ul>li{
+	display: inline;;
+	margin-left: 10px;
+	line-height: 30px;
+	vertical-align: middle;
+}
+.headbar>ul>li>a{
+	font-size: 20px;
+	font-weight: 700px;
+	color: black;
+    text-decoration-line:none ;
+}
+
+.main_container{
+	display: flex;
+	min-width:100%;
+	min-height:50%;
+}
+.main_container2{
+	display: inline-block;
+	margin: 0 auto;
+}
+button[type="button"]{
+	border: 0px;
+	padding: 5px 10px;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.377);
+}

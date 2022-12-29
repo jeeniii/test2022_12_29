@@ -1,0 +1,6 @@
+@charset "UTF-8";
+form{
+	display: flex;
+	justify-content: center;
+	width: 500px;
+}

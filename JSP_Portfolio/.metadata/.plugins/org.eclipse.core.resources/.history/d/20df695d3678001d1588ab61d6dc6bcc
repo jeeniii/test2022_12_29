@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+</script>
+</head>
+<body>
+<h1>Login page</h1>
+<form action="/mem/login_auth" method="post">
+ID: <input type="text" name="id"> <br>
+PASSWORD: <input type="password" name="pwd"> <br>
+<button type="submit" id="login">로그인</button>
+</form>
+</body>
+</html>

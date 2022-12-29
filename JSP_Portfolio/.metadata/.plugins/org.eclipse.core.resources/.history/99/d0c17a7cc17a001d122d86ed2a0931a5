@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+.main_container{
+	display: flex;
+	min-width:100%;
+	min-height:50%;
+}
+.main_container2{
+	display: inline-block;
+	margin: 0 auto;
+}
+button[type="button"]{
+	border: 0px;
+	padding: 5px 10px;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.377);
+}
+section{
+	min-height: 500px;
+}

@@ -1,0 +1,10 @@
+table {
+	margin-top: 30px;
+    margin-left:auto; 
+    margin-right:auto;
+    width: 870px;
+    background-color: rgba(255, 255, 255, 0.377);
+}
+section{
+	min-height: 270px;
+}

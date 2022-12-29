@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mabatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="MemberMapper">
+	<insert id="add" parameterType="mvo" >
+		insert into member3 (id,pwd,nick_name,phone,addr)
+		values (#{id},#{pwd},#{nick_name},#{phone},#{addr})
+	</insert>
+	
+	<select id="login" parameterType="mvo" resultType="mvo">
+		select * from member3 where id=#{id} and pwd=#{pwd}
+	</select>
+	
+	<update id="last" parameterType="String">
+		update member3 set last_login=now() where id=#{id}
+	</update>
+	
+	<select id="list" resultType="mvo">
+		select id,nick_name,phone,addr,reg_at,last_login from member3
+	</select>
+	
+	<select id="modify" parameterType="String" resultType="mvo">
+		select id,nick_name,phone,addr from member3 where id=#{id}
+	</select>
+	
+	<update id="update" parameterType="mvo">
+		update member3 set pwd=#{pwd},nick_name=#{nick_name},phone=#{phone},addr=#{addr}
+		where id=#{id}
+	</update>
+	
+	<delete id="delete" parameterType="String">
+		delete from member3 where id=#{id}
+	</delete>
+</mapper>

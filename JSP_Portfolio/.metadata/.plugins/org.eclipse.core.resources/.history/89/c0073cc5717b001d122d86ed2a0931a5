@@ -1,0 +1,45 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<%@ include file="/header.jsp" %>
+<link rel="stylesheet" href="/resources/css/boardRegister.css" type="text/css">
+</head>
+<body>
+<div class="container">
+	<form action="/brd/insert" method="post" enctype="multipart/form-data">
+				<div class="r_input">
+					<span class="sp">
+						제목:
+					</span>
+						<input type="text" name="title" id="textbox1"> <br>
+				</div>
+				<div class="r_input">
+					<span class="sp">
+						작성자: 
+					</span>
+						<input type="text" name="writer" value="${ses.nick_name }" id="textbox2" readonly="readonly"> <br>
+				</div>
+				<div class="r_input">
+					<span class="sp">
+						내용: 
+					</span>
+						<textarea rows="30" cols="30" name="content"></textarea> <br>
+				</div>
+				<div class="r_input">
+					<span class="sp">
+						이미지:
+					</span>
+						<input type="file" id="file" name="image_file" accept="image/png, image/jpg, img/jpeg, image/gif"> <br>
+				</div>
+		<div class="boardRe">
+			<button type="submit">게시판 등록</button>
+		</div>
+	</form>
+</div>
+	<%@ include file="/footer.jsp" %>
+</body>
+</html>

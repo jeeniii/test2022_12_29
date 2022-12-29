@@ -1,0 +1,36 @@
+@charset "UTF-8";
+#hanlabong{
+    width: 50px;
+    height: 50px;
+}
+
+#hanlabtn{
+	background-color: transparent;
+	border:none;
+	cursor: pointer;
+}
+#hanlabtn button{
+	background-color: transparent;
+	border:none;
+	cursor: pointer;
+	
+}
+#hanlabtn:hover{
+	transform:scale(1.5);
+  	transition: transform .5s;
+}
+footer{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	bottom: 30px;
+	
+}
+footer .copyright{
+	display: block;
+	color: rgb(194,148,126);
+	text-decoration: none;
+}

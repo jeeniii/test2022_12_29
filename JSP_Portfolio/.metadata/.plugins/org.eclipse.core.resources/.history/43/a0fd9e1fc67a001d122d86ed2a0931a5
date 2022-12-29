@@ -1,0 +1,10 @@
+@charset "UTF-8";
+table{
+	display: flex;
+	justify-content: center;
+}
+.turnup{
+	display: flex;
+	justify-content: center;
+	height: 430px;
+}

@@ -1,0 +1,21 @@
+@charset "UTF-8";
+form{
+	width:550px;
+	margin: 0 auto;
+	padding: 0px;
+}
+section{
+}
+.j_put{
+	font-size:10px;
+	display: inline-flex;
+	width: 100%;
+	padding: 10px 20px;
+}
+.j_put>input{
+	flex: 1 1 0%;
+	border: 0px;
+	padding: 5px 10px;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.503);
+}

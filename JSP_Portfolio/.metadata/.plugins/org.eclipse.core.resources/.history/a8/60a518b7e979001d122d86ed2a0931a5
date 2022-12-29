@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mabatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper>
+	<insert id="insert" parameterType="bvo">
+		insert into board3 (title,writer,content,image_file)
+		values(#{title},#{writer},#{content},#{image_file})
+	</insert>
+	
+	<update id="read_count" parameterType="int">
+		update board3 set read_count=read_count+1 where bno=#{bno}
+	</update>
+	
+	<select id="detail" parameterType="int" resultType="bvo">
+		select * from board3 where bno=#{bno}
+	</select>
+	
+	<select id="count" resultType="int">
+		select count(bno) from board3;
+	</select>
+		
+	<select id="pagingList" parameterType="pgvo" resultType="bvo">
+		select bno,title,writer,reg_date,read_count,image_file
+		from board3 order by bno desc limit #{pageStart},#{qty}
+	</select>
+</mapper>
